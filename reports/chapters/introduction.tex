@@ -2,87 +2,51 @@
 \label{ch:into} % This how you label a chapter and the key (e.g., ch:into) will be used to refer this chapter ``Introduction'' later in the report. 
 % the key ``ch:into'' can be used with command \ref{ch:intor} to refere this Chapter.
 
-\textbf{Guidance on introduction chapter writing:} Introductions are written in the following parts:
 \begin{itemize}
-    \item A brief  description of the investigated problem.
-    \item A summary of the scope and context of the project, i.e., what is the background of the topic/problem/application/system/algorithm/experiment/research question/hypothesis/etc. under investigation/implementation/development [whichever is applicable to your project].
-    \item The aims and objectives of the project.
-    \item A description of the problem and the methodological approach adopted to solve the problem.
-    \item A summary of the most significant outcomes and their interpretations.
-    \item Organization of the report. 
-\end{itemize}
-
-
-Consult \textbf{your supervisor} to check the content of the introduction chapter. In this template, we only offer basic sections of an introduction chapter. It may  not be complete and comprehensive. Writing a report is a subjective matter, and a report's style and structure depend on the ``type of project'' as well as an individual's preference. This template suits the following project paradigms:
-\begin{enumerate}
-    \item software engineering and software/web application development;
-    \item algorithm implementation, analysis and/or application;  
-    \item science lab (experiment); and
-    \item pure theoretical development (not mention extensively).
-\end{enumerate}
-
-Use only a single \textbf{font} for the body text. We recommend using a clean and electronic document friendly font like \textbf{Arial} or \textbf{Calibri} for MS-word (If you create a report in MS word). If you use this template, DO NOT ALTER the template's default font ``amsfont default computer modern''. The default \LaTeX~font ``computer modern'' is also acceptable. 
-
-The recommended body text \textbf{font size} is minimum \textbf{11pt} and minimum one-half line spacing. The recommended figure/table caption font size is minimum 10pt. The footnote\footnote{Example footnote: footnotes are useful for adding external sources such as links as well as extra information on a topic or word or sentence. Use command \textbackslash footnote\{...\} next to a word to generate a footnote in \LaTeX.} font size is minimum 8pt. DO NOT ALTER the font setting of this template.   
+    \item A complete blood cell count (CBC) is vital for assessing health, comprising red blood cells (RBCs), white blood cells (WBCs), and platelets. Manual counting methods are time-consuming and error-prone, requiring automation. Machine learning, particularly deep learning, offers robust solutions across medical applications. Applying deep learning to identify and count blood cells in smear images presents a promising avenue for accurate and efficient analysis, revolutionizing medical diagnostics. Previous models like YOLOv5 and YOLOX have pushed the boundaries of object detection with improved speed and accuracy. YOLOv5 introduced innovations like ConvBNLeakyReLU and EfficientNet-inspired components. YOLOX further enhanced performance with methods like Cross Stage Partial Network plus CBS. While these models have advanced the field, they may face limitations in handling small objects or complex scenes
+       
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Background}
 \label{sec:into_back}
-Describe to a reader the context of your project. That is, what is your project and what its motivation. Briefly explain the major theories, applications, and/or products/systems/algorithms whichever is relevant to your project.
-
-\textbf{Cautions:} Do not say you choose this project because of your interest, or your supervisor proposed/suggested this project, or you were assigned this project as your final year project. This all may be true, but it is not meant to be written here.
+The utilization of image-based methods for disease detection and diagnosis has gained significant attention in recent years. This project focuses on the development of an automated system for the identification and counting of blood cells, leveraging advanced image processing and machine learning techniques.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Problem statement}
 \label{sec:intro_prob_art}
-This section describes the investigated problem in detail. You can also have a separate chapter on ``Problem articulation.''  For some projects, you may have a section like ``Research question(s)'' or ``Research Hypothesis'' instead of a section on ``Problem statement.'
-
+The accurate identification and characterization of blood cells, particularly red blood cells (RBCs) and white blood cells (WBCs), pose significant challenges in traditional medical diagnostics. Manual methods for blood cell analysis are often labor-intensive, time-consuming, and prone to human error, leading to variability in results.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Aims and objectives}
 \label{sec:intro_aims_obj}
-Describe the ``aims and objectives'' of your project. 
+Aims: This project aims to develop an automated system for blood cell analysis to improve accuracy, efficiency, and reliability in disease diagnosis.
 
-\textbf{Aims:} The aims tell a read what you want/hope to achieve at the end of the project. The  aims define your intent/purpose in general terms.  
+Objectives: The specific objectives of this project include: 
 
-\textbf{Objectives:} The objectives are a set of tasks you would perform in order to achieve the defined aims. The objective statements have to be specific and measurable through the results and outcome of the project.
+*Exploring existing methodologies for automated blood cell analysis.
+
+*Identifying limitations in current approaches and proposing innovative solutions. 
+
+*Designing and implementing a novel solution approach combining image processing and machine learning techniques. 
+*Evaluating the performance of the developed system and comparing it with existing methods.
+
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Solution approach}
 \label{sec:intro_sol} % label of Org section
-Briefly describe the solution approach and the methodology applied in solving the set aims and objectives.
+Briefly, the solution approach involves leveraging advanced algorithms and methodologies from image processing and machine learning domains. This includes preprocessing techniques for image enhancement, feature extraction methods, and the implementation of machine learning models for classification and counting of blood cells.
 
-Depending on the project, you may like to alter the ``heading'' of this section. Check with you supervisor. Also, check what subsection or any other section that can be added in or removed from this template.
 
-\subsection{A subsection 1}
-\label{sec:intro_some_sub1}
-You may or may not need subsections here. Depending on your project's needs, add two or more subsection(s). A section takes at least two subsections. 
-
-\subsection{A subsection 2}
-\label{sec:intro_some_sub2}
-Depending on your project's needs, add more section(s) and subsection(s).
-
-\subsubsection{A subsection 1 of a subsection}
-\label{sec:intro_some_subsub1}
-The command \textbackslash subsubsection\{\} creates a paragraph heading in \LaTeX.
-
-\subsubsection{A subsection 2 of a subsection}
-\label{sec:intro_some_subsub2}
-Write your text here...
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Summary of contributions and achievements} %  use this section 
 \label{sec:intro_sum_results} % label of summary of results
-Describe clearly what you have done/created/achieved and what the major results and their implications are. 
+ This study makes several significant contributions to the field of automated blood cell analysis. By addressing key challenges and proposing innovative solutions, we aim to: Improve the accuracy and reliability of blood cell identification and counting. Streamline the analysis process, thereby reducing time and labor requirements. Enhance the diagnostic capabilities of healthcare professionals, leading to improved patient outcomes.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Organization of the report} %  use this section
 \label{sec:intro_org} % label of Org section
-Describe the outline of the rest of the report here. Let the reader know what to expect ahead in the report. Describe how you have organized your report. 
-
-\textbf{Example: how to refer a chapter, section, subsection}. This report is organised into seven chapters. Chapter~\ref{ch:lit_rev} details the literature review of this project. In Section~\ref{ch:method}...  % and so on.
-
-\textbf{Note:}  Take care of the word like ``Chapter,'' ``Section,'' ``Figure'' etc. before the \LaTeX command \textbackslash ref\{\}. Otherwise, a  sentence will be confusing. For example, In \ref{ch:lit_rev} literature review is described. In this sentence, the word ``Chapter'' is missing. Therefore, a reader would not know whether 2 is for a Chapter or a Section or a Figure.
+The report is organized into several sections for clarity and coherence. It begins with an Introduction, covering background, problem statement, aims, objectives, and solution approach. Following this, the Literature Review discusses pertinent sources and citation practices. Methodology outlines the research methodology adopted. Results present the findings obtained from the study. Discussion and Analysis critically analyze the results, highlighting their significance and limitations. Conclusions summarize the key findings and suggest avenues for future research. Finally, Appendices include supplementary materials such as data tables or additional information for interested readers. This structure aims to guide readers through the report's content efficiently and comprehensively.
 
