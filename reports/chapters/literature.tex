@@ -1,50 +1,32 @@
 \chapter{Literature Review}
 \label{ch:lit_rev} %Label of the chapter lit rev. The key ``ch:lit_rev'' can be used with command \ref{ch:lit_rev} to refer this Chapter.
 
-A literature review chapter can be organized in a few sections with appropriate titles. A literature review chapter might  contain the following:
-\begin{enumerate}
-    \item A review of the state-of-the-art (include theories and solutions) of the field of research.
-    \item A description of the project in the context of existing literature and products/systems.
-    \item An analysis of how the review is relevant to the intended application/system/problem.
-    \item A critique of existing work compared with the intended work.
-\end{enumerate}
-Note that your literature review should demonstrate the significance of the project.
+In the dynamic realm of blood cell image analysis, recent strides have transformed the landscape, automating and refining cell counting processes. Notably, one study pioneers image processing, automating red blood cell counting through a groundbreaking edge detection algorithm. Another introduces an extended Hough transform for low-parametric object detection, emphasizing ongoing modifications for precise counting. In nuclei extraction, a study clusters microscopic images, utilizing the curvelet transform and a novel color saturation gradient for discriminating atypical cases. A substantial contribution focuses on leukocyte segmentation, integrating pre-processing for robust identification. Employing circularity features, another study introduces an iterative circle detection algorithm, a breakthrough in binary image separation. The Circlet Transform emerges as a novel method, particularly for red blood cell segmentation, showcasing potential through the Circular Hough Transform. Additionally, a deep learning model proves promising in automating blood cell counting, utilizing the Blood Cell Count Dataset. Collectively, these innovations propel the field towards unparalleled efficiency and accuracy in blood cell analysis.
 
 % PLEAE CHANGE THE TITLE of this section
 \section{Example of in-text citation of references in \LaTeX} 
 % Note the use of \cite{} and \citep{}
-The references in a report relate your content with the relevant sources, papers, and the works of others. To include references in a report, we \textit{cite} them in the texts. In MS-Word, EndNote, or MS-Word references, or plain text as a list can be used. Similarly, in \LaTeX, you can use the ``thebibliography'' environment, which is similar to the plain text as a list arrangement like the MS word. However, In \LaTeX, the most convenient way is to use the BibTex, which takes the references in a particular format [see references.bib file of this template] and lists them in style [APA, Harvard, etc.] as we want with the help of proper packages.    
+\cite{alomari2014automatic}
 
-These are the examples of how to \textit{cite} external sources, seminal works, and research papers. In \LaTeX, if you use ``\textbf{BibTex}'' you do not have to worry much since the proper use of a bibliographystyle package like ``agsm for the Harvard style'' and little rectification of the content in a BiBText source file [In this template, BibTex are stored in the ``references.bib'' file], we can conveniently generate  a reference style. 
-
-Take a note of the commands \textbackslash cite\{\} and \textbackslash citep\{\}. The command \textbackslash cite\{\} will write like ``Author et al. (2019)'' style for Harvard, APA and Chicago style. The command \textbackslash citep\{\} will write like ``(Author et al., 2019).'' Depending on how you construct a sentence, you need to use them smartly. Check the examples of \textbf{in-text citation} of sources listed here [This template recommends the \textbf{Harvard style} of referencing.]:
-\begin{itemize}
-    \item \cite{lamport1994latex} has written a comprehensive guide on writing in \LaTeX ~[Example of \textbackslash cite\{\} ].
-    \item If \LaTeX~is used efficiently and effectively, it helps in writing a very high-quality project report~\citep{lamport1994latex} ~[Example of \textbackslash citep\{\} ].   
-    \item A detailed APA, Harvard, and Chicago referencing style guide are available in~\citep{uor_refernce_style}.
-\end{itemize}
-
-\noindent 
-Example of a numbered list:
-\begin{enumerate}
-    \item \cite{lamport1994latex} has written a comprehensive guide on writing in \LaTeX.
-    \item If \LaTeX is used efficiently and effectively, it helps in writing a very high-quality project report~\citep{lamport1994latex}.   
-\end{enumerate}
 
 % PLEAE CHANGE THE TITLE of this section
 \section{Example of ``risk'' of unintentional plagiarism}
-Using other sources, ideas, and material always bring with it a risk of unintentional plagiarism. 
+Navigating the landscape of academic writing requires a keen awareness of the potential pitfalls, and one significant challenge is the risk of unintentional plagiarism. This occurs when writers inadvertently mismanage the incorporation of external sources, ideas, or materials into their work, leading to improper paraphrasing, summarizing, quoting, or citing. The nuances of proper attribution can be intricate, and unintentional plagiarism often stems from a lack of awareness or failure to adhere to citation rules.
 
-\noindent
-\textbf{\color{red}MUST}: do read the university guidelines on the definition of plagiarism as well as the guidelines on how to avoid plagiarism~\citep{uor_plagiarism}.
+Example of Unintentional Plagiarism – Citing Wrongly:
 
+A common illustration of unintentional plagiarism is the improper citation of sources. Imagine a scenario where a writer, in the process of compiling research, encounters a compelling idea from a scholarly article. While attempting to integrate this idea into their work, they inadvertently misattribute it to another source or overlook the necessity of proper citation. This misstep results in unintentional plagiarism, as the writer fails to give due credit to the original author. Whether due to oversight, unfamiliarity with citation guidelines, or misinterpretation of the source, such instances underscore the importance of meticulous citation practices to avoid unintentional plagiarism and uphold the principles of academic integrity.
 
 
 
 % A possible section of you chapter
 \section{Critique of the review} % Use this section title or choose a betterone
-Describe your main findings and evaluation of the literature. ~\\
+In recent advancements in blood cell image analysis, several studies have significantly contributed to automating and enhancing the accuracy of blood cell counting processes. One notable study \cite{alomari2014automatic}, focuses on applying image processing techniques to extract blood cell images from microscopes, particularly automating the red blood cell counting process. Through the utilization of digital image processing, the study employs an edge detection algorithm to identify and count red blood cells, demonstrating a pivotal advancement in the field. Another noteworthy approach \cite{maitra2012detection}, involves the application of the Hough transform, a well-established feature extraction technique. Initially developed for line detection, this method has been extended for detecting low-parametric objects, such as circles. While offering a cost-effective and efficient approach, the study suggests the need for modifications to ensure accurate counting, stressing the necessity for further investigations into complete blood cell counts.
+
+In the realm of nuclei extraction, \cite{poomcokrak2008red} employ clustering of microscopic images and the curvelet transform, proving effective in detecting detailed information and enabling discrimination between atypical and blast cases. The study introduces a novel feature, the color saturation gradient, contributing to the classification of lymphoblast cells and atypical lymphoma cells. Another significant contribution comes from \cite{putzu2013white}, where it proposes a method for leukocyte segmentation and identification. This approach integrates pre-processing methods to simplify and enhance segmentation, emphasizing the multi-stage process, including shape control and nucleus-cytoplasm selection, contributing to more robust leukocyte identification.Utilizing thresholding and morphological operations, the circularity feature \cite{sarrafzadeh2015circlet} of blood cells is employed in an iterative structured circle detection algorithm. This introduces a new technique for binary image separation and demonstrates promising results.
+
+Further innovations include the introduction of the Circlet Transform \cite{soltanzadeh2012extraction}, offering a novel method for segmenting circular objects, with a specific focus on red blood cells. Utilizing the Circular Hough Transform, the method showcases potential in RBC segmentation.
 
 % Pleae use this section
 \section{Summary} 
-Write a summary of this chapter~\\
+In recent strides towards automating blood cell image analysis, a series of noteworthy studies have significantly advanced the field. These studies encompass diverse methodologies, such as image processing, Hough transform, clustering, and deep learning. One study pioneers the use of image processing, specifically an edge detection algorithm, to automate red blood cell counting, marking a pivotal advancement. Another approach employs the Hough transform for feature extraction, offering a cost-effective method for detecting low-parametric objects, though suggesting the need for modifications for accurate counting. Further contributions involve nuclei extraction using clustering and the curvelet transform, introducing a novel feature for discriminating atypical cases. Another study proposes a multi-stage method for leukocyte segmentation, emphasizing shape control and nucleus-cytoplasm selection. Innovations also include the introduction of the Circlet Transform for segmenting circular objects, with a focus on red blood cells, and the application of a deep learning model trained on the Blood Cell Count Dataset, showcasing promising results in automating blood cell counting. Collectively, these studies underscore the diverse and evolving landscape of techniques contributing to the automation and accuracy of blood cell image analysis.
