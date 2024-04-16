@@ -3,270 +3,235 @@
 \chapter{Methodology}
 \label{ch:method} % Label for method chapter
 
-We mentioned in Chapter~\ref{ch:into} %[example backward reference to a chapter or section.]
-that a project report's structure could follow a particular paradigm. Hence, the organization of a report (effectively the Table of Content of a report) can vary depending on the type of project you are doing. Check which of the given examples suit your project. Alternatively, follow your supervisor's advice.
+\section {Algorithms descriptions}
+\textbf {Region-based Convolutional Neural Networks (R-CNN)}: R-CNN is a seminal method for object detection that works by generating region proposals followed by CNN-based feature extraction for each proposal. Initially proposed by  Girshick et al. [8], R-CNN has laid the foundation for subsequent advancements in object detection.
 
-\section{Examples of the sections of a methodology chapter}
-A general report structure is summarised (suggested) in Table~\ref{tab:gen_template}. Table~\ref{tab:gen_template} describes that, in general, a typical report structure has three main parts: (1) front matter, (2) main text, and (3) end matter. %[\textbf{also notice that the preceding sentence is an example of a numbered list in a text body}]. 
-The structure of the front matter and end matter will remain the same for all the undergraduate final year project report. However, the main text varies as per the project's needs.
-\begin{table}[ht!]
-    \centering
-    \caption{Undergraduate report template structure}
-    \label{tab:gen_template}
-    \begin{tabular}{llll}     
-        \toprule
-        \multirow{7}{3cm}{Frontmatter} 
-        & & Title Page & \\                  
-        & & Abstract &    \\          
-        & & Acknowledgements & \\                            
-        & & Table of Contents &    \\                                
-        & & List of Figures   &    \\                        
-        & & List of Tables    &    \\                
-        & & List of Abbreviations  &    \\                     
-        & &   &    \\                        
-        \multirow{7}{3cm}{Main text}
-        & Chapter 1 & Introduction   &    \\                         
-        & Chapter 2 & Literature Review   &    \\
-        & Chapter 3 & Methodology   &    \\
-        & Chapter 4 & Results    &    \\
-        & Chapter 5 & Discussion and Analysis  &    \\
-        & Chapter 6 & Conclusions and Future Work  &    \\        
-        & Chapter 7 & Refection  &    \\          
-        & &   &    \\                       
-        \multirow{2}{3cm}{End matter}
-        & & References  &    \\   
-        & & Appendices (Optional)  &    \\ 
-        & & Index (Optional)  &    \\ 
-        \bottomrule
-    \end{tabular}
-\end{table}
 
-\subsection{Example of a software/Web development main text structure}
-\label{subsec:se_chpters}
-Notice that the ``methodology'' Chapter of Software/Web development in Table~\ref{tab:soft_eng_temp} takes a standard software engineering paradigm (approach). Alternatively, these suggested sections can be the chapters of their own. Also, notice that ``Chapter 5'' in Table~\ref{tab:soft_eng_temp} is ``Testing and Validation'' which is different from the general report template mentioned in Table~\ref{tab:gen_template}. Check with your supervisor if in doubt.
-\begin{table}[ht!]
-    \centering
-    \caption{Example of a software engineering-type report structure}
-    \label{tab:soft_eng_temp}
-    \begin{tabular}{lll}     
-        \toprule                   
-        Chapter 1 & Introduction   &    \\        
-        Chapter 2 & Literature Review  &    \\                   
-        Chapter 3 & Methodology   &    \\
-        &               & Requirements specifications   \\
-        &               & Analysis   \\
-        &               & Design   \\
-        &               & Implementations   \\
-        Chapter 4 & Testing and Validation  &    \\
-        Chapter 5 & Results and Discussion      &    \\
-        Chapter 6 & Conclusions and Future Work  &    \\        
-        Chapter 7 & Reflection  &    \\                          
-        \bottomrule
-    \end{tabular}
-\end{table}
+\textbf {Fast R-CNN}: Fast R-CNN [9] improves upon the R-CNN framework by integrating the region proposal mechanism into the network architecture, enabling end-to-end training and faster inference.
 
-\subsection{Example of an algorithm analysis main text structure}
-Some project might involve the implementation of a state-of-the-art algorithm and its performance analysis and comparison with other algorithms. In that case, the suggestion in Table~\ref{tab:algo_temp} may suit you the best. 
-\begin{table}[ht!]
-    \centering
-    \caption{Example of an algorithm analysis type report structure}
-    \label{tab:algo_temp}
-    \begin{tabular}{lll}     
-        \toprule                   
-        Chapter 1 & Introduction  &    \\        
-        Chapter 2 & Literature Review  &    \\                
-        Chapter 3 & Methodology   &    \\
-        &               & Algorithms descriptions  \\
-        &               & Implementations   \\
-        &               & Experiments design   \\
-        Chapter 4 & Results       &  \\
-        Chapter 5 & Discussion and Analysis  &    \\
-        Chapter 6 & Conclusion and Future Work  &    \\        
-        Chapter 7 & Reflection  &    \\          
-        \bottomrule
-    \end{tabular}
-\end{table}
 
-\subsection{Example of an application type main text structure}
-If you are applying some algorithms/tools/technologies on some problems/datasets/etc., you may use the methodology section prescribed in Table~\ref{tab:app_temp}.  
-\begin{table}[ht!]
-    \centering
-    \caption{Example of an application type report structure}
-    \label{tab:app_temp}
-    \begin{tabular}{lll}     
-        \toprule                   
-        Chapter 1 & Introduction  &    \\        
-        Chapter 2 & Literature Review  &    \\                
-        Chapter 3 & Methodology   &    \\
-        &               & Problems (tasks) descriptions  \\
-        &               & Algorithms/tools/technologies/etc. descriptions  \\        
-        &               & Implementations   \\
-        &               & Experiments design and setup   \\
-        Chapter 4 & Results       &  \\
-        Chapter 5 & Discussion and Analysis  &    \\
-        Chapter 6 & Conclusion and Future Work  &    \\        
-        Chapter 7 & Reflection  &    \\          
-        \bottomrule
-    \end{tabular}
-\end{table}
+\textbf {Faster R-CNN}: Building upon Fast R-CNN, Faster R-CNN [10] introduces a Region Proposal Network (RPN) to efficiently generate region proposals, making the entire detection pipeline faster and more accurate.
 
-\subsection{Example of a science lab-type main text structure}
-If you are doing a science lab experiment type of project, you may use the  methodology section suggested in Table~\ref{tab:lab_temp}. In this kind of project, you may refer to the ``Methodology'' section as ``Materials and Methods.''
-\begin{table}[ht!]
-    \centering
-    \caption{Example of a science lab experiment-type report structure}
-    \label{tab:lab_temp}
-    \begin{tabular}{lll}     
-        \toprule                   
-        Chapter 1 & Introduction  &    \\        
-        Chapter 2 & Literature Review  &    \\                
-        Chapter 3 & Materials and Methods   &    \\
-        &               & Problems (tasks) description  \\
-        &               & Materials \\        
-        &               & Procedures  \\                
-        &               & Implementations   \\
-        &               & Experiment set-up   \\
-        Chapter 4 & Results       &  \\
-        Chapter 5 & Discussion and Analysis  &    \\
-        Chapter 6 & Conclusion and Future Work  &    \\        
-        Chapter 7 & Reflection  &    \\          
-        \bottomrule
-    \end{tabular}
-\end{table}
 
-\section{Example of an Equation in \LaTeX}
-Eq.~\ref{eq:eq_example} [note that this is an example of an equation's in-text citation] is an example of an equation in \LaTeX. In Eq.~\eqref{eq:eq_example}, $ s $ is the mean of elements $ x_i \in \mathbf{x} $: 
+\textbf {EfficientDet}: EfficientDet [11] is a scalable and efficient object detection model that achieves state-of-the-art performance by optimizing model architecture and scaling strategies.
+You Only Look Once (YOLO) series (YOLOv1-v8):
 
-\begin{equation}
-\label{eq:eq_example} % label used to refer the eq in text
-s = \frac{1}{N} \sum_{i = 1}^{N} x_i. 
-\end{equation}
-
-Have you noticed that all the variables of the equation are defined using the \textbf{in-text} maths command \$.\$, and Eq.~\eqref{eq:eq_example} is treated as a part of the sentence with proper punctuation? Always treat an equation or expression as a part of the sentence. 
-
-\section{Example of a Figure in \LaTeX}
-Figure~\ref{fig:chart_a} is an example of a figure in \LaTeX. For more details, check the link:
-
-\href{https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions}{wikibooks.org/wiki/LaTeX/Floats,\_Figures\_and\_Captions}.
-
-\noindent
-Keep your artwork (graphics, figures, illustrations) clean and readable. At least 300dpi is a good resolution of a PNG format artwork. However, an SVG format artwork saved as a PDF will produce the best quality graphics. There are numerous tools out there that can produce vector graphics and let you save that as an SVG file and/or as a PDF file. One example of such a tool is the ``Flow algorithm software''. Here is the link for that: \href{http://www.flowgorithm.org/download/}{flowgorithm.org}.
+\clearpage
+\textbf{You Only Look Once (YOLO) series (YOLOv1-v8)}:
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.3]{figures/chart.pdf}
-    \caption{Example figure in \LaTeX.}
-    \label{fig:chart_a}
+    \includegraphics[scale=1.0]{figures/Efficient frointier comparison.jpg}
+    \caption{Figure 3.1 Efficient frontier comparison of YOLO models}
+    \label{fig:example-01}
 \end{figure}
 
-\clearpage %  use command \clearpage when you want section or text to appear in the next page.
+The YOLO series represents a significant advancement in object detection methodology, particularly known for its real-time inference capabilities. YOLOv1 [12] introduced the concept of dividing the input image into a grid and predicting bounding boxes and class probabilities directly from the grid cells. This approach enables YOLO to achieve remarkable speed while maintaining competitive accuracy.
 
-\section{Example of an algorithm in \LaTeX}
-Algorithm~\ref{algo:algo_example} is a good example of an algorithm in \LaTeX.  
-\begin{algorithm}
-    \caption{Example caption: sum of all even numbers}
-    \label{algo:algo_example}
-    \begin{algorithmic}[1]
-        \Require{$ \mathbf{x}  = x_1, x_2, \ldots, x_N$}
-        \Ensure{$EvenSum$ (Sum of even numbers in $ \mathbf{x} $)}
-        \Statex
-        \Function{EvenSummation}{$\mathbf{x}$}
-        \State {$EvenSum$ $\gets$ {$0$}}
-        \State {$N$ $\gets$ {$length(\mathbf{x})$}}
-        \For{$i \gets 1$ to $N$}                    
-        \If{$ x_i\mod 2 == 0$}  \Comment check if a number is even?
-        \State {$EvenSum$ $\gets$ {$EvenSum + x_i$}}
-        \EndIf
-        \EndFor
-        \State \Return {$EvenSum$}
-        \EndFunction
-    \end{algorithmic}
-\end{algorithm}
- 
-\section{Example of code snippet  in \LaTeX}
+Subsequent iterations of YOLO, including YOLOv2, YOLOv3, YOLOv4, and YOLOv5, have introduced various improvements in terms of speed, accuracy, and model architecture. YOLOv2 [13 ] introduced the concept of anchor boxes for better localization, while YOLOv3 [14] improved upon its predecessor with feature pyramid networks and multi-scale predictions.
 
-Code Listing~\ref{list:python_code_ex} is a good example of including a code snippet in a report. While using code snippets, take care of the following:
-\begin{itemize}
-    \item do not paste your entire code (implementation) or everything you have coded. Add code snippets only. 
-    \item The algorithm shown in Algorithm~\ref{algo:algo_example} is usually preferred over code snippets in a technical/scientific report. 
-    \item Make sure the entire code snippet or algorithm stays on a single page and does not overflow to another page(s).  
-\end{itemize}
+YOLOv4 [15] further enhanced the model's performance by incorporating techniques like CSPDarknet53, PANet, and SPP. It achieved state-of-the-art results in terms of both speed and accuracy. YOLOv5 introduced a streamlined architecture and advanced data augmentation techniques, resulting in improved performance and efficiency.
 
-Here are three examples of code snippets for three different languages (Python, Java, and CPP) illustrated in Listings~\ref{list:python_code_ex}, \ref{list:java_code_ex}, and \ref{list:cpp_code_ex} respectively.  
+The YOLO series has continued to evolve with the introduction of YOLOv6 and YOLOv7, each bringing novel innovations to the field of object detection. These iterations have focused on optimizing model architectures, training strategies, and inference speed to address various challenges in real-world applications.
 
-\begin{lstlisting}[language=Python, caption={Code snippet in \LaTeX ~and  this is a Python code example}, label=list:python_code_ex]
+YOLO NAS (Neural Architecture Search): YOLO NAS [16] represents a departure from traditional hand-designed architectures by leveraging Neural Architecture Search (NAS) techniques to automatically discover optimal network architectures. By searching through a predefined search space of architectural components, YOLO NAS can tailor the model architecture to specific datasets and tasks, leading to improved performance and efficiency.
+
+
+\section{Code}:
+
+\begin{lstlisting}[language=Python, caption={Code snippet in \LaTeX ~and  this is a Python code }, label=list:python_code_ex]
+import shutil
+import os, sys, random
+import xml.etree.ElementTree as ET
+from glob import glob
+import pandas as pd
+from shutil import copyfile
+import pandas as pd
+from sklearn import preprocessing, model_selection
+import matplotlib.pyplot as plt
+%matplotlib inline
+from matplotlib import patches
 import numpy as np
+import os
 
-x  = [0, 1, 2, 3, 4, 5] # assign values to an array
-evenSum = evenSummation(x) # call a function
+labels = sorted(glob('/content/BCCD_Dataset/BCCD/Annotations/*.xml'))
+# print(len(labels))
+df = []
+total = 0
+for file in labels:
+  prev_filename = file.split('/')[-1].split('.')[0] + '.jpg'
+  filename = str(total) + '.jpg'
+  row = []
+  parsedXML = ET.parse(file)
+  for node in parsedXML.getroot().iter('object'):
+    blood_cells = node.find('name').text
+    xmin = int(node.find('bndbox/xmin').text)
+    xmax = int(node.find('bndbox/xmax').text)
+    ymin = int(node.find('bndbox/ymin').text)
+    ymax = int(node.find('bndbox/ymax').text)
 
-def evenSummation(x):
-    evenSum = 0
-    n = len(x)
-    for i in range(n):
-        if np.mod(x[i],2) == 0: # check if a number is even?
-            evenSum = evenSum + x[i]
-    return evenSum
+    row = [prev_filename, filename, blood_cells, xmin, xmax, ymin, ymax]
+    df.append(row)
+  total += 1
+
+data = pd.DataFrame(df, columns=['prev_filename', 'filename', 'cell_type', 'xmin', 'xmax', 'ymin', 'ymax'])
+
+data[['prev_filename','filename', 'cell_type', 'xmin', 'xmax', 'ymin', 'ymax']].to_csv('/content/blood_cell_detection.csv', index=False)
+
+img_width = 640
+img_height = 480
+
+def width(df):
+  return int(df.xmax - df.xmin)
+def height(df):
+  return int(df.ymax - df.ymin)
+def x_center(df):
+  return int(df.xmin + (df.width/2))
+def y_center(df):
+  return int(df.ymin + (df.height/2))
+def w_norm(df):
+  return df/img_width
+def h_norm(df):
+  return df/img_height
+
+df = pd.read_csv('/content/blood_cell_detection.csv')
+print(len(df))
+le = preprocessing.LabelEncoder()
+le.fit(df['cell_type'])
+print(le.classes_)
+labels = le.transform(df['cell_type'])
+df['labels'] = labels
+
+df['width'] = df.apply(width, axis=1)
+df['height'] = df.apply(height, axis=1)
+
+df['x_center'] = df.apply(x_center, axis=1)
+df['y_center'] = df.apply(y_center, axis=1)
+
+df['x_center_norm'] = df['x_center'].apply(w_norm)
+df['width_norm'] = df['width'].apply(w_norm)
+
+df['y_center_norm'] = df['y_center'].apply(h_norm)
+df['height_norm'] = df['height'].apply(h_norm)
+
+df.head(30)
+
+df.describe()
+
+df.tail(10)
+
+import cv2
+def show_mask(image_name):
+  """A function to display image and bounding box"""
+  fig = plt.figure(figsize=(6.5, 6.5))
+  ax = fig.add_axes([0,0,1,1])
+  image = plt.imread('/content/BCCD_Dataset/BCCD/JPEGImages/BloodImage_0000' + image_name)
+  plt.imshow(image)
+
+  # ax.imshow(image)
+
+  for _, row in df[df.filename == image_name].iterrows():
+        xmin = row.xmin
+        xmax = row.xmax
+        ymin = row.ymin
+        ymax = row.ymax
+
+        width = xmax - xmin
+        height = ymax - ymin
+
+        if row.cell_type == 'RBC':
+            edgecolor = 'r'
+            ax.annotate('RBC', xy=(xmax-40, ymin+20))
+        elif row.cell_type == 'WBC':
+            edgecolor = 'b'
+            ax.annotate('WBC', xy=(xmax-40, ymin+20))
+        elif row.cell_type == 'Platelets':
+            edgecolor = 'g'
+            ax.annotate('Platelets', xy=(xmax-40, ymin+20))
+
+        rect = patches.Rectangle((xmin, ymin), width, height, edgecolor=edgecolor, facecolor='none')
+        ax.add_patch(rect)
+  plt.title("Blood Cell Types : RBC , WBC , Platelets")
+  plt.text(0.5, -0.1, f"Image Width", horizontalalignment='center', verticalalignment='center', transform=plt.gca().transAxes)
+  plt.text(-0.1, 0.5, f"Image Height", horizontalalignment='center', verticalalignment='center', rotation=90, transform=plt.gca().transAxes)
+ plt.show()
+
+show_mask('1.jpg')
+show_mask('2.jpg')
+show_mask('3.jpg')
+
+Dataset Distribution
+
+from sklearn.model_selection import train_test_split
+df_train_temp, df_valid = train_test_split(df, test_size=0.10, random_state=42, shuffle=True, stratify=df['cell_type'])
+df_train, df_test = train_test_split(df_train_temp, test_size=0.075, random_state=42, shuffle=True, stratify=df_train_temp['cell_type'])
+
+Data Visualization
+
+"""Plotting of total instances of RBC ,WBC ,Platelets in Train,Validation an Test Dataset"""
+plt.subplot(1, 3, 2)
+plt.bar(valid_class_counts.index, valid_class_counts.values)
+plt.title('Validation Set Class Distribution')
+plt.xlabel('Classes')
+plt.ylabel('Instance Count')
+
+plt.subplot(1, 3, 3)
+plt.bar(test_class_counts.index, test_class_counts.values)
+plt.title('Test Set Class Distribution')
+plt.xlabel('Classes')
+plt.ylabel('Instance Count')
+
+plt.tight_layout()
+plt.show()
+
+""Plotting total count of images in train, validation, and test sets"""
+plt.figure(figsize=(10, 5))
+
+labels = ['Train', 'Validation', 'Test']
+values = [train_total_images, valid_total_images, test_total_images]
+
+plt.bar(labels, values, color=['orange', 'blue', 'red'])
+plt.title('Total Count of Images in Train, Validation, and Test Sets')
+plt.xlabel('Datasets')
+plt.ylabel('Image Count')
+plt.show()
+
 \end{lstlisting}
 
-Here we used  the ``\textbackslash clearpage'' command and forced-out the second listing example onto the next page. 
-\clearpage  %
-\begin{lstlisting}[language=Java, caption={Code snippet in \LaTeX ~and  this is a Java code example}, label=list:java_code_ex]
-public class EvenSum{ 
-    public static int evenSummation(int[] x){
-        int evenSum = 0;
-        int n = x.length;
-        for(int i = 0; i < n; i++){
-            if(x[i]%2 == 0){ // check if a number is even?
-                evenSum = evenSum + x[i];
-            }
-        }
-        return evenSum;     
-    }
-    public static void main(String[] args){ 
-        int[] x  = {0, 1, 2, 3, 4, 5}; // assign values to an array
-        int evenSum = evenSummation(x);
-        System.out.println(evenSum);
-    } 
-} 
-\end{lstlisting}
+\section{Implementation}
+\textbf{YOLO NAS Model Selection}: YOLO NAS model architecture was used for object detection experiments. Consider YOLO NAS-S, YOLO NAS-M, and YOLO NAS-L variants.
+\textbf{Training Configuration}: Configured the training parameters including the number of epochs (50-100), batch size (8,16,32), optimizer (e.g., Adam), learning rate schedule (e.g., cosine annealing with warm-up), loss function (e.g., YOLO loss), and any additional metrics for evaluation (e.g., mAP, precision, recall).
+
+\textbf{You Only Look Once (YOLO) series (YOLOv1-v8)}:
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=1.0]{figures/YOLO-NAS Neural Architecture Search.jpg}
+    \caption{Figure 3.2 : YOLO-NAS Neural Architecture Search}
+    \label{fig:example-01}
+\end{figure}
 
 
-\begin{lstlisting}[language=C, caption={Code snippet in \LaTeX ~and  this is a C/C++ code example}, label=list:cpp_code_ex]
-int evenSummation(int x[]){
-    int evenSum = 0;
-    int n = sizeof(x);
-    for(int i = 0; i < n; i++){
-        if(x[i]%2 == 0){ // check if a number is even?
-            evenSum = evenSum + x[i];
-    	}
-    }
-    return evenSum;     
-}
+\textbf{Dataset Preparation}: The dataset was prepared for training, validation , and testing . This includes data preprocessing steps such as annotation extraction, data augmentation, and splitting the dataset into training (80%), validation (10%), and test sets(10%).
+\textbf{Inference}: Set up the inference pipeline for performing object detection on new images using the trained YOLO NAS models.
+\textbf{Evaluation}: Implement the evaluation pipeline to calculate performance metrics such as mAP@0.50:0.95, precision@0.50:0.95, and recall@0.50:0.95 on the test dataset.
 
-int main(){
-    int x[]  = {0, 1, 2, 3, 4, 5}; // assign values to an array
-    int evenSum = evenSummation(x);
-    cout<<evenSum;
-    return 0;
-}
-\end{lstlisting}
+\section{Experiments Design}:
+\textbf{Model Evaluation}: Evaluate YOLO NAS models (YOLO NAS-S, YOLO NAS-M, YOLO NAS-L) on the selected metrics (mAP@0.50:0.95, precision, recall) for different configurations.
+\textbf{Hyperparameter Tuning}: Experiment with different hyperparameters such as input image sizes, number of epochs, and quantization levels (8-bit, 16-bit, 32-bit).
+\textbf{Input Image Sizes}: Experiment with different input image sizes to observe their impact on model performance and inference speed.
+\textbf{Quantization Levels}: Experiment with different quantization levels (8-bit, 16-bit, 32-bit) to analyze the trade-off between model accuracy and computational efficiency.
+\textbf{Epochs}: Train the models for different numbers of epochs (e.g., 50, 75, 100) to observe the convergence behavior and model performance over time.
+\textbf{Comparison with YOLO-S, YOLO-M, YOLO-L}: Compare the performance of YOLO NAS models with standard YOLO variants (YOLO-S, YOLO-M, YOLO-L) on the specified metrics.
 
+\section{Experimental Procedure}:
+Initialize the selected YOLO NAS model architecture.
+Train the model using the training dataset with the specified configurations (epochs, batch size, etc.). Validate the trained model on the validation dataset to monitor performance metrics. Fine-tune the model if necessary based on validation results.Evaluate the final trained model on the test dataset to report the performance metrics (mAP@0.50:0.95, precision, recall).
+Repeat the experiments for different configurations and variations.
 
+\section{Results Analysis}:
+Analyze the experimental results to identify the optimal YOLO NAS model configuration based on the specified metrics.
 
-\section{Example of in-text citation style}
-\subsection{Example of the equations and illustrations placement and reference in the text}
-Make sure whenever you refer to the equations, tables, figures, algorithms,  and listings for the first time, they also appear (placed) somewhere on the same page or in the following page(s). Always make sure to refer to the equations, tables and figures used in the report. Do not leave them without an \textbf{in-text citation}. You can refer to equations, tables and figures more them once.
+Compare the performance of YOLO NAS models with standard YOLO variants and observe any differences in accuracy, speed, and efficiency.
 
-\subsection{Example of the equations and illustrations style}
-Write \textbf{Eq.} with an uppercase ``Eq`` for an equation before using an equation number with (\textbackslash eqref\{.\}). Use ``Table'' to refer to a table, ``Figure'' to refer to a figure, ``Algorithm'' to refer to an algorithm and ``Listing'' to refer to listings (code snippets). Note that, we do not use the articles ``a,'' ``an,'' and ``the'' before the words Eq., Figure, Table, and Listing, but you may use an article for referring the words figure, table, etc. in general.
+Discuss the impact of hyperparameters (input image sizes, epochs, quantization levels) on model performance and computational efficiency.
 
-For example, the sentence ``A report structure is shown in \textbf{the} Table~\ref{tab:gen_template}'' should be written as ``A report structure is shown \textbf{in} Table~\ref{tab:gen_template}.'' 
- 
-
-\section{Summary}
-Write a summary of this chapter.
-
-~\\[5em]
-\noindent
-{\huge\textbf{Note:}} In the case of \textbf{software engineering} project a Chapter ``\textbf{Testing and Validation}'' should precede the ``Results'' chapter. See Section~\ref{subsec:se_chpters} for report organization of such project. 
-
+Interpret the results to draw conclusions and insights regarding the effectiveness of YOLO NAS for object detection tasks.
