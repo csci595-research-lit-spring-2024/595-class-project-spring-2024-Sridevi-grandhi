@@ -1,0 +1,41 @@
+\chapter{Literature Review}
+\label{ch:lit_rev} %Label of the chapter lit rev. The key ``ch:lit_rev'' can be used with command \ref{ch:lit_rev} to refer this Chapter.
+
+In recent times, there have been big improvements in how we analyze blood cell images.
+These advancements have made counting cells easier and more accurate. For instance, one
+study created a smart way to count red blood cells using special image tricks. Another study
+found a better way to spot objects in images, which helps count cells more precisely. Some
+researchers also figured out how to find unusual cells by looking at their shape and color in
+microscope pictures. They even made a cool new method to find round cells in images, which
+is super helpful for counting red blood cells. Plus, there's a clever computer model that's
+learning to count blood cells all on its own. These new ideas are making blood cell analysis
+faster and more reliable.
+
+
+% PLEAE CHANGE THE TITLE of this section
+\section{Example of in-text citation of references in \LaTeX} 
+% Note the use of \cite{} and \citep{}
+\cite{alomari2014automatic}
+
+
+% PLEAE CHANGE THE TITLE of this section
+\section{Example of ``risk'' of unintentional plagiarism}
+Navigating the landscape of academic writing requires a keen awareness of the potential pitfalls, and one significant challenge is the risk of unintentional plagiarism. This occurs when writers inadvertently mismanage the incorporation of external sources, ideas, or materials into their work, leading to improper paraphrasing, summarizing, quoting, or citing. The nuances of proper attribution can be intricate, and unintentional plagiarism often stems from a lack of awareness or failure to adhere to citation rules.
+
+Example of Unintentional Plagiarism – Citing Wrongly:
+
+A common illustration of unintentional plagiarism is the improper citation of sources. Imagine a scenario where a writer, in the process of compiling research, encounters a compelling idea from a scholarly article. While attempting to integrate this idea into their work, they inadvertently misattribute it to another source or overlook the necessity of proper citation. This misstep results in unintentional plagiarism, as the writer fails to give due credit to the original author. Whether due to oversight, unfamiliarity with citation guidelines, or misinterpretation of the source, such instances underscore the importance of meticulous citation practices to avoid unintentional plagiarism and uphold the principles of academic integrity.
+
+
+
+% A possible section of you chapter
+\section{Critique of the review} % Use this section title or choose a betterone
+In recent advancements in blood cell image analysis, several studies have significantly contributed to automating and enhancing the accuracy of blood cell counting processes. One notable study \cite{alomari2014automatic}, focuses on applying image processing techniques to extract blood cell images from microscopes, particularly automating the red blood cell counting process. Through the utilization of digital image processing, the study employs an edge detection algorithm to identify and count red blood cells, demonstrating a pivotal advancement in the field. Another noteworthy approach \cite{maitra2012detection}, involves the application of the Hough transform, a well-established feature extraction technique. Initially developed for line detection, this method has been extended for detecting low-parametric objects, such as circles. While offering a cost-effective and efficient approach, the study suggests the need for modifications to ensure accurate counting, stressing the necessity for further investigations into complete blood cell counts.
+
+In the realm of nuclei extraction, \cite{poomcokrak2008red} employ clustering of microscopic images and the curvelet transform, proving effective in detecting detailed information and enabling discrimination between atypical and blast cases. The study introduces a novel feature, the color saturation gradient, contributing to the classification of lymphoblast cells and atypical lymphoma cells. Another significant contribution comes from \cite{putzu2013white}, where it proposes a method for leukocyte segmentation and identification. This approach integrates pre-processing methods to simplify and enhance segmentation, emphasizing the multi-stage process, including shape control and nucleus-cytoplasm selection, contributing to more robust leukocyte identification.Utilizing thresholding and morphological operations, the circularity feature \cite{sarrafzadeh2015circlet} of blood cells is employed in an iterative structured circle detection algorithm. This introduces a new technique for binary image separation and demonstrates promising results.
+
+Further innovations include the introduction of the Circlet Transform \cite{soltanzadeh2012extraction}, offering a novel method for segmenting circular objects, with a specific focus on red blood cells. Utilizing the Circular Hough Transform, the method showcases potential in RBC segmentation.
+
+% Pleae use this section
+\section{Summary} 
+In recent strides towards automating blood cell image analysis, a series of noteworthy studies have significantly advanced the field. These studies encompass diverse methodologies, such as image processing, Hough transform, clustering, and deep learning. One study pioneers the use of image processing, specifically an edge detection algorithm, to automate red blood cell counting, marking a pivotal advancement. Another approach employs the Hough transform for feature extraction, offering a cost-effective method for detecting low-parametric objects, though suggesting the need for modifications for accurate counting. Further contributions involve nuclei extraction using clustering and the curvelet transform, introducing a novel feature for discriminating atypical cases. Another study proposes a multi-stage method for leukocyte segmentation, emphasizing shape control and nucleus-cytoplasm selection. Innovations also include the introduction of the Circlet Transform for segmenting circular objects, with a focus on red blood cells, and the application of a deep learning model \cite{bccd2020} trained on the Blood Cell Count Dataset, showcasing promising results in automating blood cell counting. Collectively, these studies underscore the diverse and evolving landscape of techniques contributing to the automation and accuracy of blood cell image analysis.
